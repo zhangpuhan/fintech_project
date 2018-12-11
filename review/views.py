@@ -10,7 +10,7 @@ from models.review import XgbModel
 
 @app.route('/')
 def index():
-    api_key = "am36v8r5maakuqSqeTok9Zgzexw="
+    api_key = "Your api key"
     header = {"Authorization" : api_key}
     url = "https://api.lendingclub.com/api/investor/v1/loans/listing"
     

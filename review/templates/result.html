@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br/>
+<font color="red">This page shows the results for<br/></font>
+<br/>
+<font size="+2">LendingClub Loan Requests Prediction</font><br />
+<br />
+The table below shows prediction results for available loans today<br />
+<br />
+Note: the highest charged off risk is 1<br />
+the higher the risk is, the higher probability the borrower will not pay back<br />
+
+
+<br />
+<br />
+<br />
+<font size="4">Current Loan Requests Default Risk Prediction</font><br />
+<br />
+<div align="center">
+    {{ data | safe}}
+    
+<br />
+    
+
+    
+    
+    
+    {% endblock %}

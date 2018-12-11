@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br/>
+<font color="red">This website provides robotic investment risk analysis for real time<br/></font>
+<br/>
+<font size="+2">LendingClub Loan Requests</font><br />
+<br />
+The table below shows current loans when you open this website <br />
+<br />
+Note: only partial information displayed<br />
+only term of 36 months is considered in the model<br />
+for LendingClub 2015 loan status interactive plot, please see "About"
+
+
+<br />
+<br />
+<br />
+<font size="4">Current Loan Requests</font><br />
+<br />
+<div align="center">
+{{ data | safe}}
+
+<br />
+Click the button to predict the risk of charged-off for these loans:<br />
+<button onclick="location.href = '/result/';">Predict</button>
+<br />
+<br />
+
+
+
+{% endblock %}
+
+

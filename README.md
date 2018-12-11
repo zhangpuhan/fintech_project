@@ -31,4 +31,6 @@ numpy
 flask
 
 # Run
+Add your own api key to /review/view.py line 13 "api_key="
+
 Nevigate to the folder and type **python runsever.py** in terminal
